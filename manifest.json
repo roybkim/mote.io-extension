@@ -26,6 +26,16 @@
   "content_scripts": [
     {
       "matches": [
+        "http://orteil.dashnet.org/cookieclicker/*"
+      ],
+      "js": [
+        "moteio.js",
+        "remotes/cookie-clicker.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
         "http://*.hypem.com/*",
         "http://hypem.com/*"
       ],
