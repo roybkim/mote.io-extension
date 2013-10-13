@@ -10,9 +10,17 @@ exec(function() {
 
 		},
 		update: function(force) {
-			
+			var cookieCount = jQ('#cookies').text().split(" ")[0] + " cookies",
+				cps = jQ('#cookies div').text(),
+				cookieImg = "http://orteil.dashnet.org/cookieclicker/img/goldCookie.png";
+
+				mote.io.notify(cookieCount, cps, cookieImg, '?', force);
 		},
 		blocks: [
+			{
+				type: 'notify',
+				share: false
+			},
 			{
 				type: 'buttons',
 				data: [
@@ -20,7 +28,7 @@ exec(function() {
 						press: function() {
 							jQ('#bigCookie').click();	
 						},
-						icon: 'play',
+						icon: 'globe',
 						hash: 'big cookie'
 					}
 				]
