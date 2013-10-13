@@ -1,6 +1,6 @@
 exec(function() {
 	
-	moto.io.remote = {
+	mote.io.remote = {
 		api_version: '0.1',
 		app_name: 'Cookie Clicker',
 		action: 'playing',
@@ -10,7 +10,7 @@ exec(function() {
 
 		},
 		update: function(force) {
-
+			
 		},
 		blocks: [
 			{
@@ -18,14 +18,14 @@ exec(function() {
 				data: [
 					{
 						press: function() {
-							$('#bigCookie').click();	
+							jQ('#bigCookie').click();	
 						},
-						icon: 'chevron-left',
+						icon: 'play',
 						hash: 'big cookie'
 					}
 				]
 			},
 		]
 	};
-})
+});
 

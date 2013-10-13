@@ -26,6 +26,7 @@
   "content_scripts": [
     {
       "matches": [
+        "http://*.orteil.dashnet.org/cookieclicker/*",
         "http://orteil.dashnet.org/cookieclicker/*"
       ],
       "js": [
